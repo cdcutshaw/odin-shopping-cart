@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import CartSummary from "./CartSummary";
+import CartSummary from "../CartSummary/CartSummary";
 
 function Navbar() {
   return (

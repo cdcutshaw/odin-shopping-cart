@@ -66,3 +66,84 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+
+/* temporary. need to convert to modules */
+
+img {
+  width: 50px;
+}
+
+
+/* cartSummary */
+.cartSummaryContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cartIcon {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.cartHoverPrompt {
+  position: absolute;
+  top: 30px;
+  background-color: #000;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* cartDetails */
+
+.cartModal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartModalContent {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 90%;
+  position: relative;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.checkoutButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkoutButton:hover {
+  background-color: #218838;
+}

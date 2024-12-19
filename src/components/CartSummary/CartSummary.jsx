@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { useCart } from "../context/CartContext";
-import CartDetails from "./CartDetails";
+import { useCart } from "../../context/CartContext";
+import CartDetails from "../CartDetails/CartDetails";
 import { FaShoppingCart } from "react-icons/fa";
 
 function CartSummary() {
