@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: "Lato", sefif ;
+  line-height: 1.5;
+  color: var(--font-color);
+  background-color: var(--neutral-color); 
+  font-size: 16px;
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+
+
+
+
+h1 {
+    
+    line-height: 1.1;
+    color: var(--font-color);
+  }
+
+svg, span, a {
+  color: var(--accent-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
+  }
+
+button {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+  opacity: 0.5;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* A simple utility class for center-aligning */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Global margin/padding utility */
+.mt-4 { margin-top: 4rem; }
+.mb-4 { margin-bottom: 4rem; }
+
+:root {
+    --primary-color: #f5f3f0;
+    --secondary-color: #3e4e2f ;
+    --accent-color: #253841;
+    --neutral-color: #e6e2d8;
+    --font-color: #2c2922;
+}

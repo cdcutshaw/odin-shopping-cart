@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useCart } from "../context/CartContext";
 import ProductCard from "../components/ProductCard/ProductCard";
+import styles from "./Shop.module.css"
 
 function Shop() {
   const { addToCart } = useCart();
@@ -26,7 +27,7 @@ function Shop() {
   }
 
   return (
-    <div className="shopContainer">
+    <div className={styles.shopContainer}>
       <h1>Shop here</h1>
       <div className="productGrid">
         {products.map((product) => (

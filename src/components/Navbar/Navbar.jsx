@@ -1,13 +1,20 @@
 import { Link } from "react-router-dom";
 import CartSummary from "../CartSummary/CartSummary";
+import styles from "./Navbar.module.css"
 
 function Navbar() {
   return (
-    <div className="navContainer">
-      <Link to="/">Home</Link>
-      <Link to="/shop">Shop</Link>
+    <header className={styles.navContainer}>
+      
+      <div className="nav">
+       
+        <Link to="/"><img src="./src/assets/logo-blue.png" alt="Logo" /> </Link>
+        <Link to="/shop">Shop</Link>
+      </div>
+      <h1 >Basic & Beyond </h1>
+      
       <CartSummary />
-    </div>
+    </header>
   );
 }
 

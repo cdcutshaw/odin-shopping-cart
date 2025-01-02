@@ -1,0 +1,47 @@
+.imgContainer img{
+    display: block;
+    width: 100vw;
+    height: auto;
+}
+
+.overlayText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 30px;
+    opacity: 0.9;
+    border-radius: 5px;
+}
+
+.overlayText h1 {
+    color: var(--accent-color);
+}
+
+.overlayText > * {
+    padding: 10px;
+}
+
+.shopBtn {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.shopBtn:hover {
+    color: white;
+    opacity: 0.5;
+    
+}

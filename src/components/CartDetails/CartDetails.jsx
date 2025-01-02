@@ -1,13 +1,14 @@
 import { useCart } from "../../context/CartContext";
+import styles from "./CartDetails.module.css"
 
 function CartDetails({ onClose }) {
   const { cart, updateQuantity, removeFromCart } = useCart();
   const cartTotal = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   return (
-    <div className="cartModal">
-      <div className="cartModalContent">
-        <button className="closeButton" onClick={onClose}>
+    <div className={styles.cartModal}>
+      <div className={styles.cartModalContent}>
+        <button className={styles.closeButton} onClick={onClose}>
           &times;
         </button>
         <h2>Your Cart</h2>
@@ -16,7 +17,7 @@ function CartDetails({ onClose }) {
         ) : (
           <>
             {cart.map((item) => (
-              <div key={item.id} className="cartItem">
+              <div key={item.id} className={styles.cartItem}>
                 <img src={item.image} alt={item.title} />
                 <h3>{item.title}</h3>
                 <p>${item.price.toFixed(2)}</p>
@@ -36,7 +37,7 @@ function CartDetails({ onClose }) {
               </div>
             ))}
             <h3>Total: ${cartTotal.toFixed(2)}</h3>
-            <button className="checkoutButton">Proceed to Checkout</button>
+            <button className={styles.checkoutButton}>Proceed to Checkout</button>
           </>
         )}
       </div>

@@ -1,7 +1,10 @@
+import React from 'react';
+import HeroSection from '../components/HeroSection/HeroSection';
+
 function Home() {
     return (
         <div className="homeContainer">
-            <h1>Welcome!</h1>
+            <HeroSection/>
         </div>
     )   
 }
