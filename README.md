@@ -1,8 +1,6 @@
-# React + Vite
+This project is part of The Odin Project's full-stack JavaScript curriculum.
+Link to The Odin Project page: https://www.theodinproject.com/lessons/node-path-react-new-shopping-cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The primary goal of this project is to build a mock shopping cart application using React. It focuses on concepts like component structure, state management with React hooks, and integrating third-party APIs for dynamic data fetching in order to create a responsive, single-page application (SPA) with routing handled by react-router-dom.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Link to live app: https://basic-and-beyond.netlify.app/
