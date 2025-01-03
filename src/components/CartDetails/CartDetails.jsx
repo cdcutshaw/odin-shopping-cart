@@ -21,15 +21,17 @@ function CartDetails({ onClose }) {
                 <img src={item.image} alt={item.title} />
                 <h3>{item.title}</h3>
                 <p>${item.price.toFixed(2)}</p>
-                <div>
-                  <button
+                <div className={styles.itemQuantity}>
+                  <button className={styles.quantityBtn}
                     onClick={() => updateQuantity(item.id, item.quantity - 1)}
                     disabled={item.quantity === 1}
                   >
                     -
                   </button>
                   <span>{item.quantity}</span>
-                  <button onClick={() => updateQuantity(item.id, item.quantity + 1)}>
+                  <button className={styles.quantityBtn}
+                    onClick={() => updateQuantity(item.id, item.quantity + 1)}
+                  >
                     +
                   </button>
                 </div>

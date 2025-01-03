@@ -17,7 +17,10 @@
     border-radius: 10px;
     max-width: 600px;
     width: 90%;
+    max-height: 80%; 
+    overflow-y: auto;
     position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   .closeButton {
@@ -29,8 +32,72 @@
     border: none;
     cursor: pointer;
     background-color: var(--secondary-color);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .closeButton:hover {
+    opacity: 0.5;
   }
   
+  .cartItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .cartItem img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .cartItem h3 {
+    flex-grow: 1;
+    font-size: 1rem;
+    margin: 0 10px;
+  }
+
+  .cartItem p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .itemQuantity {
+    display: flex;
+    align-items: center;
+  }
+
+  .quantityBtn {
+    margin: 13px;
+    border-radius: 50%;
+    border: 1px solid var(--accent-color);
+    background-color: #fff;
+    color: var(--accent-color);
+    text-align: center;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow:0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    padding: none;
+  }
+  .quantityBtn:hover {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
+
   .checkoutButton {
     margin-top: 20px;
     padding: 10px 20px;
@@ -42,5 +109,5 @@
   }
   
   .checkoutButton:hover {
-    background-color: #218838;
+    opacity: 0.5;
   }
