@@ -1,7 +1,14 @@
-img {
-    width: 90px;
+
+
+  .shopContainer {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    padding: 20px;
+    margin: 20px;
   }
 
-.shopContainer {
-    
-}
+  .shopContainer > div:hover {
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+  }

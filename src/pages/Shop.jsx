@@ -27,9 +27,9 @@ function Shop() {
   }
 
   return (
-    <div className={styles.shopContainer}>
-      <h1>Shop here</h1>
-      <div className="productGrid">
+    
+      
+      <div className={styles.shopContainer}>
         {products.map((product) => (
           <ProductCard
             key={product.id}
@@ -38,7 +38,7 @@ function Shop() {
           />
         ))}
       </div>
-    </div>
+    
   );
 }
 

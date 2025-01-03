@@ -26,11 +26,12 @@ body {
 h1 {
     
     line-height: 1.1;
-    color: var(--font-color);
+    color: var(--secondary-color);
   }
 
 svg, span, a {
   color: var(--accent-color);
+  text-decoration:none;
 }
 
 a:hover {
