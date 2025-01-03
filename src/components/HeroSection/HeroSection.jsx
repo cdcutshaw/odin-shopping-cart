@@ -6,7 +6,7 @@ const HeroSection = () => (
     <section className="hero">
         <div className="hero-content">
             <div className={styles.imgContainer}>
-               <img src="./src/assets/HeroImg.jpg" /> 
+               <img src="./public/HeroImg.jpg" /> 
             </div>
             <div className={styles.overlayText}>
                 <h1>Elevate Your Everyday Essentials</h1>
